@@ -1,6 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #1b1725;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.title h1 {
+  text-align: center;
+  color: #d0bcd5;
+  position: relative;
+  top: 5px;
+  font-size: 64px;
 }
 .main-display {
   display: grid;
@@ -8,19 +18,27 @@
   grid-template-rows: 50% 50%;
 }
 .section {
-  width: 50vw;
-  height: 50vh;
-  border: 2px solid black;
+  width: 90%;
+  height: 42vh;
+  background-color: #534b62;
+  margin: 25px 25px 25px 25px;
+  box-shadow: 8px 8px 2px #a499b3;
+  position: relative;
+  overflow: scroll;
 }
-.section.picture {
-  background-color: red;
+.header {
+  position: absolute;
+  background: transparent;
+  font-size: 64px;
+  color: #d0bcd5;
+  left: 10px;
+  text-shadow: 5px 5px 2px black;
 }
-.section.about {
-  background-color: lightblue;
-}
-.section.why {
-  background-color: purple;
-}
-.section.fact {
-  background-color: lightgreen;
+.desc {
+  position: absolute;
+  top: 80px;
+  margin: 20px 20px 20px 20px;
+  background: transparent;
+  font-size: 32px;
+  color: #d0bcd5;
 }
