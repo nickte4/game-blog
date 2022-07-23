@@ -5,26 +5,37 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+body {
+  overflow-y: hidden;
+}
 .title h1 {
   text-align: center;
   color: #d0bcd5;
   position: relative;
   top: 5px;
   font-size: 64px;
+  animation: topMove 2s ease-in;
 }
 .main-display {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45%;
+  height: 100vh;
 }
 .section {
   width: 90%;
-  height: 42vh;
+  height: 40vh;
   background-color: #534b62;
   margin: 25px 25px 25px 25px;
   box-shadow: 8px 8px 2px #a499b3;
   position: relative;
   overflow: scroll;
+}
+.section.left {
+  animation: leftMove 1s ease-in;
+}
+.section.right {
+  animation: rightMove 1s ease-in;
 }
 .header {
   position: absolute;
@@ -39,6 +50,34 @@
   top: 80px;
   margin: 20px 20px 20px 20px;
   background: transparent;
-  font-size: 32px;
+  font-size: 28px;
+  text-shadow: 2px 2px black;
   color: #d0bcd5;
+}
+
+/* keyframe animations */
+@keyframes topMove {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes leftMove {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes rightMove {
+  from {
+    right: -1000px;
+  }
+  to {
+    right: 0px;
+  }
 }
