@@ -2,3 +2,25 @@
   margin: 0;
   padding: 0;
 }
+.main-display {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.section {
+  width: 50vw;
+  height: 50vh;
+  border: 2px solid black;
+}
+.section.picture {
+  background-color: red;
+}
+.section.about {
+  background-color: lightblue;
+}
+.section.why {
+  background-color: purple;
+}
+.section.fact {
+  background-color: lightgreen;
+}
