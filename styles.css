@@ -5,10 +5,19 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-body {
-  overflow-y: hidden;
-}
+
+/* main page styling */
 .title h1 {
+  color: #d0bcd5;
+  font-size: 48px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  text-shadow: 2px 2px black;
+}
+
+/* template styling */
+.blog-title h1 {
   text-align: center;
   color: #d0bcd5;
   position: relative;
@@ -16,6 +25,7 @@ body {
   font-size: 64px;
   animation: topMove 2s ease-in;
 }
+
 .main-display {
   display: grid;
   grid-template-columns: 50% 50%;
