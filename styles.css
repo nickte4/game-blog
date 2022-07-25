@@ -90,6 +90,22 @@ a:visited {
 }
 
 /* template styling */
+.home-link {
+  width: 150px;
+  height: 50px;
+  font-size: 32px;
+  background-color: #534b62;
+  text-decoration: none;
+  color: #d0bcd5;
+  border-radius: 0 0 10px 0;
+}
+
+.home-link:hover {
+  transform: translateX(12px) translateY(5px) scale(1.15);
+
+  transition: all 100ms;
+}
+
 .blog-title h1 {
   text-align: center;
   color: #d0bcd5;
