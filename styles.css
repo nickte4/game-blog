@@ -1,8 +1,13 @@
+@font-face {
+  font-family: silkscreen;
+  src: url(./assets/slkscr.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: silkscreen, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 body {
@@ -35,7 +40,7 @@ body {
   background-color: #d0bcd5;
   margin: 50px 20px 0px 20px;
   text-align: center;
-  box-shadow: 24px 24px #ffff66, 48px 48px #5c00e6;
+  animation: diagonalMove 500ms ease-in;
 }
 
 .card-content {
@@ -62,7 +67,8 @@ body {
   background-color: #d0bcd5;
   cursor: pointer;
   transform: scale(1.05);
-  transition: all 100ms ease-in;
+  box-shadow: 24px 24px 1px #ffff66, 48px 48px 1px #5c00e6;
+  transition: all 400ms ease-in;
 }
 
 .card:hover > .game1-picture {
@@ -126,7 +132,17 @@ body {
   color: #d0bcd5;
 }
 
-/* keyframe animations */
+/* keyframe animations for index */
+@keyframes diagonalMove {
+  from {
+    transform: translate3d(1000px, 1000px, 0px);
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* keyframe animations for blog */
 @keyframes topMove {
   from {
     top: -200px;
