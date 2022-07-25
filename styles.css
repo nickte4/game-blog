@@ -24,29 +24,18 @@ body {
 
 .game1-picture {
   background-image: url(./images/mafia.jpg);
-  background-size: 375px 450px;
-  background-position-x: -35px;
+  background-size: 500px 650px;
   opacity: 1;
   height: 100%;
-  border-radius: 30px;
 }
 
 .card {
-  width: 300px;
-  height: 450px;
+  width: 500px;
+  height: 650px;
   background-color: #d0bcd5;
   margin: 50px 20px 0px 20px;
   text-align: center;
-  border-radius: 30px;
-}
-
-.card h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 18px;
+  box-shadow: 24px 24px #ffff66, 48px 48px #5c00e6;
 }
 
 .card-content {
@@ -58,6 +47,15 @@ body {
 
 .card-content.game1 {
   bottom: 350px;
+}
+
+.card h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
 }
 
 .card:hover {
@@ -92,6 +90,7 @@ body {
   grid-template-rows: 45%;
   height: 100vh;
 }
+
 .section {
   width: 90%;
   height: 40vh;
@@ -107,6 +106,7 @@ body {
 .section.right {
   animation: rightMove 1s ease-in;
 }
+
 .header {
   position: absolute;
   background: transparent;
@@ -115,6 +115,7 @@ body {
   left: 10px;
   text-shadow: 5px 5px 2px black;
 }
+
 .desc {
   position: absolute;
   top: 80px;
