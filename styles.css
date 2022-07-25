@@ -127,7 +127,7 @@ a:visited {
   height: 40vh;
   background-color: #534b62;
   margin: 25px 25px 25px 25px;
-  box-shadow: 8px 8px 2px #a499b3;
+  box-shadow: 10px 10px #a499b3;
   position: relative;
   overflow: scroll;
 }
