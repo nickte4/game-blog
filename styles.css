@@ -49,7 +49,7 @@ a:visited {
   background-color: #d0bcd5;
   margin: 50px 20px 0px 20px;
   text-align: center;
-  animation: diagonalMove 500ms ease-in;
+  animation: diagonalMove 750ms;
 }
 
 .card-content {
@@ -89,7 +89,7 @@ a:visited {
   display: initial;
 }
 
-/* contact me styling */
+/* footer (contact me) styling */
 .footer {
   position: fixed;
   left: 0;
@@ -108,22 +108,30 @@ a:visited {
 .social1,
 .social2 {
   background-size: cover;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   position: absolute;
+  border: 2px solid #d0bcd5;
+  border-radius: 15px;
 }
 
 .social1 {
   background-image: url(./images/linkedin.png);
   bottom: 18px;
-  left: 330px;
+  left: 320px;
 }
 .social2 {
   background-image: url(./images/insta.png);
-  bottom: 16px;
-  left: 400px;
-  width: 52px;
-  height: 52px;
+  bottom: 18px;
+  left: 390px;
+  width: 43px;
+  height: 43px;
+}
+
+.social1:hover,
+.social2:hover {
+  transform: scale(1.2);
+  transition: all 100ms;
 }
 
 /* template styling */
