@@ -112,7 +112,7 @@ a:visited {
   position: relative;
   top: 5px;
   font-size: 64px;
-  animation: topMove 2s ease-in;
+  animation: topMove 1s ease-in;
 }
 
 .main-display {
