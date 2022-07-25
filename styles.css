@@ -89,6 +89,43 @@ a:visited {
   display: initial;
 }
 
+/* contact me styling */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+}
+.footer h2 {
+  color: #d0bcd5;
+  font-size: 32px;
+  position: relative;
+  bottom: 25px;
+  left: 50px;
+}
+
+.social1,
+.social2 {
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+
+.social1 {
+  background-image: url(./images/linkedin.png);
+  bottom: 18px;
+  left: 330px;
+}
+.social2 {
+  background-image: url(./images/insta.png);
+  bottom: 16px;
+  left: 400px;
+  width: 52px;
+  height: 52px;
+}
+
 /* template styling */
 .home-link {
   width: 150px;
