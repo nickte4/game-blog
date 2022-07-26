@@ -204,11 +204,16 @@ a:visited {
 .desc {
   position: absolute;
   top: 80px;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   background: transparent;
   font-size: 20px;
   text-shadow: 2px 2px black;
   color: #d0bcd5;
+}
+
+.desc.list {
+  left: 30px;
+  font-size: 24px;
 }
 
 /* keyframe animations for index */
